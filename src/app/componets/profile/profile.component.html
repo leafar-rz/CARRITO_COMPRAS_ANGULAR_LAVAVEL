@@ -1,0 +1,20 @@
+<p>profile works!</p>
+        
+          <p>Usuario: {{ user?.name }}</p>
+          
+              <table id="table">
+                <tr>
+                  <th>
+                    <button (click)="onLogout()" style="width:87px;">Salir</button>
+                  </th>
+                </tr>
+              </table>
+             
+           
+<form [formGroup]="formForgot" (ngSubmit)="forgotPassword()">
+    <h5>
+        Ingresa la nueva contraseña que deseas tener, Min. 6 caracteres
+    </h5><br>
+    <input type="password" formControlName="password" placeholder="Ingresa el password"><br>
+    <button type="submit" style="margin-top: 15px;">RESTABLECER</button>
+</form>

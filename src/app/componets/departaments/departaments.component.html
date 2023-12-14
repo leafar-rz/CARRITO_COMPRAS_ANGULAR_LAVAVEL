@@ -1,0 +1,30 @@
+<p id="titleDepartaments">{{ nombre_departament }}</p>
+
+<div id="departamentosContainer">
+    <button id="btnDepartamentos" (click)="seleccionarZamora()">-Zamora</button>
+    <button id="btnDepartamentos" (click)="seleccionarLaPiedad()">-La Piedad</button>
+    <button id="btnDepartamentos" (click)="seleccionarTodos()">-Todos</button>
+    <button id="btnDepartamentos" *ngFor="let categorie of categories"
+        (click)="seleccionarCategorie(categorie.id,categorie.descripcion)">-{{ categorie.descripcion }}</button>
+</div>
+<br>
+
+<table border="1px" align="center">
+    <tr>
+        <div class="articulo" *ngFor="let articulo of articles">
+            <th id="thArticles">
+                <img id="imgArticles" [src]="articulo.img" alt="Imagen del artículo">
+                <div class="info">
+                    <h4>{{ articulo.descripcion }}</h4>
+                    <p>Precio: {{ articulo.precio }}</p>
+                    <p>Existencias: {{ articulo.existencias }}</p>
+                    <input type="number" [(ngModel)]="cantidad">
+                    <button (click)="agregarAlCarrito(articulo,cantidad)">Agregar</button>
+                </div>
+            </th>
+        </div>
+
+
+
+    </tr>
+</table>

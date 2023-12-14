@@ -1,0 +1,50 @@
+.active-link{
+    background-color: aliceblue;
+}
+
+.active-link a{
+    color: black;
+}
+
+#btnEncabezado
+{
+    font-size: 17px; 
+    color: rgb(0, 0, 0); 
+    background-color: transparent;
+    border: none;
+
+}
+
+#thEncabezado{
+    width:60%;
+    text-align: left;
+}
+
+#thEncabezado2{
+    width: 10%;
+}
+
+#thEncabezado4{
+    width: 5%;
+    margin-right: 60px;
+}
+
+#div1
+{
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+}
+
+#departamentosContainer {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: left; /* Alinea el contenido a la izquierda */
+    width: auto;
+}
+
+#btnDepartamentos{
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+    font-size: 15px;
+}

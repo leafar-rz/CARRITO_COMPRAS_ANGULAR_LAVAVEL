@@ -1,0 +1,52 @@
+<nav>
+<div id="div1">
+    <table>
+        <tr>
+
+            <th id="thEncabezado2">
+                <button id="btnEncabezado" routerLink="/home" (click)="getDepartamentsOnDisplay()">DEPARTAMENTOS</button>
+            </th>
+
+            <th id="thEncabezado2">
+                <button id="btnEncabezado" routerLink="/login">ACERCA DE</button>
+            </th>
+
+            <th id="thEncabezado2">
+                <button id="btnEncabezado" routerLink="/register">CONTACTO</button>
+            </th>
+
+            <th id="thEncabezado2">
+                <button id="btnEncabezado" routerLink="/profile">CUENTA</button>
+            </th>
+
+            <th id="thEncabezado">
+                    <img src="../../../assets/img/gangbrand_logo_sinFondo.png" alt="" style="width: 240px; margin-left: 45px;" routerLink="/home">
+            </th>
+
+            <th id="thEncabezado4">
+                <img src="../../../assets/img/account2.png" alt="" style="width: 50px; margin-right: 20px;" routerLink="/profile">
+            </th>
+
+            <th id="thEncabezado4">
+                <img src="../../../assets/img/car.png" alt="" style="width: 50px; margin-right: 20px;" routerLink="/register">
+            </th>
+
+            
+        </tr>
+
+        <tr>
+            <th colspan="7">
+                <div id="departamentosContainer">
+                    <!-- Aquí se mostrarán los botones de departamentos -->
+                </div><br>
+            </th>
+        </tr>
+    </table>   
+
+</div>
+
+<div id="departamentosContainer" *ngIf="divDepartaments">
+    <button id="btnDepartamentos" *ngFor="let departamento of departaments" (click)="seleccionarDepartamento(departamento.id,departamento.nombre)">-{{ departamento.nombre }}</button>
+</div>
+
+</nav>

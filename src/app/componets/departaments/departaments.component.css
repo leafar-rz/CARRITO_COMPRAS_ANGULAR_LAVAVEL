@@ -1,0 +1,31 @@
+#titleDepartaments{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+#departamentosContainer {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: left; /* Alinea el contenido a la izquierda */
+    width: auto;
+}
+
+#btnDepartamentos{
+    background-color: transparent;
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#imgArticles{
+    width: 90%;
+    height: 50%;
+}
+
+#thArticles{
+    width: 350px;
+    height:400px;
+}
